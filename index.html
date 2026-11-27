@@ -11,14 +11,15 @@
   iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; background: #f6f7f4; }
   .wait { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 14px;
           color: #fff; font-family: "Bookman Old Style", Georgia, serif; font-size: 17px; }
-  .wait a { color: #e8d9b0; font-family: "Segoe UI", Arial, sans-serif; font-size: 13px; }
+  .wait a { color: #e8d9b0; font-family: "Segoe UI", Arial, sans-serif; font-size: 13px; visibility: hidden; animation: show 0s 12s forwards; }
+  @keyframes show { to { visibility: visible; } }
 </style>
 </head>
 <body>
   <!-- shown for a moment while the portal loads, and as a fallback if the browser blocks the frame -->
   <div class="wait">
     <div>RAMAN S SHAH &amp; CO LLP – Audit Portal</div>
-    <a href="https://script.google.com/macros/s/AKfycbwWSo4YtZ7RQXW344wYr0Ob_b79G-Ggntorq8vWW4V_gC5O82qRojGCgxJ1n8QcxLLaLw/exec" target="_top">Open the portal directly</a>
+    <a href="https://script.google.com/macros/s/AKfycbwWSo4YtZ7RQXW344wYr0Ob_b79G-Ggntorq8vWW4V_gC5O82qRojGCgxJ1n8QcxLLaLw/exec" target="_top">Portal not showing after a minute? Open it on Google instead</a>
   </div>
   <iframe src="https://script.google.com/macros/s/AKfycbwWSo4YtZ7RQXW344wYr0Ob_b79G-Ggntorq8vWW4V_gC5O82qRojGCgxJ1n8QcxLLaLw/exec"
           title="Audit Portal" allow="clipboard-write"></iframe>
